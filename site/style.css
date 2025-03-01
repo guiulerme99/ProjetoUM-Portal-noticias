@@ -1,21 +1,21 @@
 ul {
     list-style: none;
-    background-color: blue;
+    background-color: black;
     padding: 1px;
     overflow: hidden;
 }
 li {
-    float: left;
+    float: right;
 }
 li a {
-    display: block;
+    display: flex;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 li a:hover {
-    background-color: darkblue;
+    background-color: #111;
 }
 main {
     display: flex;
@@ -34,4 +34,188 @@ article {
     margin: 10px;
     padding: 10px;
     background-color: darkgray;
+}
+.nav {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: right;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    flex-grow: 1;
+}
+.menu {
+    background-color: black;
+    opacity: 0.6;
+    display: flex;
+    list-style-type: none;
+    height: 5vh;
+    align-items: center;
+    justify-content: space-between;
+    width: 35vh;
+    margin: 25px 30px 0 0;
+    padding: 0 20px 0 20px;
+    border-radius: 20px;
+}
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 20px;
+}
+.fundo {
+    display: flex;
+    align-items: center;
+}
+.pesquisa {
+    background-color: black;
+    border-radius: 100%;
+    opacity: 0.6;
+    color: white;
+    border: none;
+    margin: 25px 30px 0 0;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.pesquisa i {
+    margin-right: 1px;
+}
+.pesquisa:hover {
+    color: #555;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 30px;
+    margin-top: 0;
+    /* background-image: url(../imagens/galeria3.jpg);
+    background-position: center; */
+}
+#inicioMain {
+    width: 100%;
+    margin-bottom: 20px;
+}
+#decoracao {
+    background-color: black;
+    width: 67px;
+    height: 67px;
+    float: left;
+    margin-left: 100px;
+    font-size: 40px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-image: linear-gradient(to right, red , yellow);
+}
+#tituloMain {
+    float: left;
+    margin-top: -2px;
+    margin-left: 100px;
+    font-size: 50px;
+    translate: -40%;
+    color: black;
+    font-family: sans-serif;
+    color: rgba(90, 34, 139);
+    font-family: "Roboto", sans-serif;
+}
+#btTodos {
+    width: 150px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    float: right;
+    margin-right: 100px;
+    background-image: linear-gradient(to right, red , yellow);
+    font-size: 25px;
+    padding: 10px;
+}
+#textoBtTodos {
+    color: rgba(90, 34, 139);
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+}
+.link_news {
+    text-decoration: none;
+    color: black;
+}
+.linhas {
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+}
+article {
+    display: flex;
+    flex: 1;
+    background-color: white;
+}
+/* Bloco inteiro da Noticia */
+.noticia {
+    display: flex;
+    border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.123);
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 850px;
+}
+/* Imagens das Noticias */
+.imagemNoticia {
+    height: 190px;
+    width: 300px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#imagemNoticia1 {
+    background-image: url(imagens/img1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#imagemNoticia2 {
+    background-image: url(imagens/img2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#imagemNoticia3 {
+    background-image: url(imagens/img3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#imagemNoticia4 {
+    background-image: url(imagens/img4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#imagemNoticia5 {
+    background-image: url(imagens/img5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#imagemNoticia6 {
+    background-image: url(imagens/img6.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/* Todos os textos da noticia */
+.textoNoticia {
+    margin-top: 15px;
+}
+h1 {
+    margin: 0px 5px 18px 10px;
+    padding: 3px 5px 0px 3px;
+}
+p {
+    margin: 3px 5px 0px 10px;
+    padding: 3px 5px 0px 3px;
+    text-align: justify;
+    font-size: 17px;
 }
