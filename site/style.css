@@ -21,7 +21,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 40px;
+    margin: -25.8px;
 }
 .colunas {
     display: flex;
@@ -239,7 +239,7 @@ body {
 }
 .background-container {
     width: 100%;
-    height: 53.4vh;
+    height: 46.7vh;
     background: linear-gradient(156.30deg, rgb(229, 71, 26) 21.795%, rgb(250, 148, 4) 101.627%), rgb(238, 202, 55);
     background-position: top;
     background-size: cover;

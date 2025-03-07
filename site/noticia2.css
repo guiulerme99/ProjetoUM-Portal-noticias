@@ -74,14 +74,18 @@ li a:hover {
     color: #555;
 }
 header {
+    position: fixed; /* Fixa o cabeçalho */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Garante que o cabeçalho fique sobre outros elementos */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px;
+    padding: 0;
     box-sizing: border-box;
-    width: 100%;
-    height: 30px;
-    margin: 0px 0px 250px 0px;
+    height: 100px; /* Altura do cabeçalho */
+    background-color: black; /* Cor do fundo */
 }
 
 #apresentacao_imagem {
@@ -92,6 +96,7 @@ header {
     background-position: center;
     border-radius: 40px 40px 24px 24px;
     margin: auto;
+    margin-top: 250px;
 }
 
 section {
@@ -169,7 +174,7 @@ a {
 }
 .background-container {
     width: 100%;
-    height: 80vh;
+    height: 40vh;
     background: linear-gradient(156.30deg, rgb(229, 71, 26) 21.795%, rgb(250, 148, 4) 101.627%), rgb(238, 202, 55);
     background-position: top;
     background-size: cover;
@@ -194,7 +199,7 @@ a {
     width: 200px;
     height: 200px;
 }
-#principal {
+/* #principal {
     margin-top: 200px;
     transform: translate(0%, 1.7%);
-}
+} */
