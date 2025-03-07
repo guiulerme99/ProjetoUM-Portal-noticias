@@ -56,7 +56,7 @@ article {
     align-items: center;
     justify-content: space-between;
     width: 35vh;
-    margin: 25px 30px 0 0;
+    margin: 25px 30px 0px 0px;
     padding: 0 20px 0 20px;
     border-radius: 20px;
 }
@@ -95,11 +95,11 @@ header {
     box-sizing: border-box;
     width: 100%;
     height: 30px;
-    margin: 0px 0px 200px 0px;
+    margin: 0px 0px 250px 0px;
 }
 #inicioMain {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 #decoracao {
     background-color: black;
@@ -112,14 +112,14 @@ header {
     border-bottom-left-radius: 10px;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
-    background: linear-gradient(146.31deg, rgb(255, 99, 177), rgb(255, 194, 146));
+    background: linear-gradient(146.31deg, rgb(250, 148, 4), rgb(238, 202, 55));
 }
 #tituloMain {
     float: left;
     margin-top: 9px;
-    margin-left: 100px;
+    margin-left: 20px;
     font-size: 50px;
-    translate: -44%;
+    /* translate: -44%; */
     color: black;
     font-family: sans-serif;
     color: rgba(90, 34, 139);
@@ -127,6 +127,7 @@ header {
 }
 #btTodos {
     width: 150px;
+    height: 30px;
     text-align: center;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -134,13 +135,13 @@ header {
     border-bottom-right-radius: 30px;
     float: right;
     margin-right: 100px;
-    background: linear-gradient(156.30deg, rgb(150, 54, 164), rgb(30, 85, 186));
+    background: linear-gradient(156.30deg, rgb(229, 71, 26), rgb(250, 148, 4));
     font-size: 25px;
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 #btTodos:hover {
-    background: linear-gradient(146.31deg, rgb(255, 99, 177), rgb(255, 194, 146));
+    background: linear-gradient(146.31deg, rgb(250, 148, 4), rgb(238, 202, 55));
 }
 #textoBtTodos {
     color: white;
@@ -187,17 +188,17 @@ article {
     border-bottom-left-radius: 10px;
 }
 #imagemNoticia1 {
-    background-image: url(imagens/verTodos/primeiraNoticia.webp);
+    background-image: url(imagens/verTodos/noticiaRestante9.webp);
     height: 200px;
     width: 200px;
 }
 #imagemNoticia2 {
-    background-image: url(imagens/verTodos/noticiaRestante1.webp);
+    background-image: url(imagens/verTodos/noticiaRestante10.webp);
     height: 200px;
     width: 200px;
 }
 #imagemNoticia3 {
-    background-image: url(imagens/verTodos/noticiaRestante2.webp);
+    background-image: url(imagens/verTodos/noticiaRestante11.webp);
     height: 200px;
     width: 200px;
 }
@@ -219,6 +220,7 @@ article {
 /* Todos os textos da noticia */
 .textoNoticia {
     margin-top: 15px;
+    margin-right: 20px;
     width: 650px;
 }
 h1 {
@@ -229,7 +231,7 @@ p {
     margin: 3px 5px 0px 10px;
     padding: 3px 5px 0px 3px;
     text-align: justify;
-    font-size: 17px;
+    font-size: 20px;
 }
 body {
     margin: 0px;
@@ -237,14 +239,92 @@ body {
 }
 .background-container {
     width: 100%;
-    height: 100vh;
-    background-image: url(/site/imagens/img8.jpg);
+    height: 53.4vh;
+    background: linear-gradient(156.30deg, rgb(229, 71, 26) 21.795%, rgb(250, 148, 4) 101.627%), rgb(238, 202, 55);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
-    border-bottom-right-radius: 80px;
-    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 150px;
+    border-bottom-left-radius: 150px;
     overflow: hidden;
     padding: 0px;
     margin: 0px;
+    position: fixed;
+}
+
+/* ---- NOTICIAS DO DIA ---- */
+#noticiasDoDia {
+    padding: 0px;
+    display: flex;
+    width: 1598px;
+    height: 500px;
+    margin-bottom: 100px;
+    background-color: transparent;
+}
+.noticiaDoDia {
+    display: block;
+    height: 500px;
+    width: 380px;
+    box-shadow: 0px 25px 50px 0px rgba(93, 93, 93, 0.12);
+    background-color: transparent;
+    margin-right: 25px;
+    border-radius: 20px;
+}
+.imagemNoticiaDoDia {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 260px;
+    width: 380px;
+    padding: 0px;
+    margin: 0px;
+    border-top-right-radius: 20px;
+    margin-bottom: 30px;
+    border-top-left-radius: 20px;
+}
+.textoNoticiaDoDia {
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center
+}
+.textoNoticiaDoDia p {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.textoNoticiaDoDia h1 {
+    font-size: 25px;
+    color: black;
+}
+.textoNoticiaDoDia a {
+    text-decoration: none;
+}
+#imagemNoticiaDoDia1 {
+    background-image: url(imagens/verTodos/primeiraNoticia.webp);
+}
+#imagemNoticiaDoDia2 {
+    background-image: url(imagens/verTodos/noticiaRestante1.webp);
+}
+#imagemNoticiaDoDia3 {
+    background-image: url(imagens/verTodos/noticiaRestante2.webp);
+}
+#imagemNoticiaDoDia4 {
+    background-image: url(imagens/noticia4_destaqueFundo.webp);
+}
+.nav h1 {
+    transform: translate(-500%, 180%);
+    font-size: 40px;
+    color: black;
+    font-family: "Lilita One", sans-serif;
+    text-shadow: white 1.5px 0px 4px;
+}
+#logo {
+    background-image: url(imagens/logo.png);
+    transform: translate(-370%, 15%);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+}
+footer {
+    background: linear-gradient(156.30deg, rgb(229, 71, 26) 21.795%, rgb(250, 148, 4) 101.627%), rgb(238, 202, 55) !important;
 }

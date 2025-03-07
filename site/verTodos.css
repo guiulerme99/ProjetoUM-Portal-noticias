@@ -6,6 +6,87 @@ main {
     padding: 0px;
     margin: 0px;
 }
+ul {
+    list-style: none;
+    background-color: black;
+    padding: 1px;
+    overflow: hidden;
+}
+li {
+    float: right;
+}
+li a {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #111;
+}
+.nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    position: fixed;
+    justify-content: right;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    flex-grow: 1;
+}
+.menu {
+    background-color: black;
+    opacity: 0.6;
+    display: flex;
+    list-style-type: none;
+    height: 5vh;
+    align-items: center;
+    justify-content: space-between;
+    width: 35vh;
+    margin: 25px 30px 0px 0px;
+    padding: 0 20px 0 20px;
+    border-radius: 20px;
+}
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 20px;
+}
+.fundo {
+    display: flex;
+    align-items: center;
+}
+.pesquisa {
+    background-color: black;
+    border-radius: 100%;
+    opacity: 0.6;
+    color: white;
+    border: none;
+    margin: 25px 30px 0 0;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.pesquisa i {
+    margin-right: 1px;
+}
+.pesquisa:hover {
+    color: #555;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 30px;
+    margin: 0px 0px 250px 0px;
+}
 #linhaPrimeiraNoticia {
     display: flex;
     margin: 50px 5px 5px 5px;
@@ -37,6 +118,7 @@ article {
 }
 #textoPrimeiraNoticia a {
     text-decoration: none;
+    color: rgb(97, 0, 81);
 }
 #textoPrimeiraNoticia h1 {
     margin: 35px 0px 10px 30px;
@@ -161,7 +243,7 @@ article {
     width: 200px;
 }
 #imagemNoticiaRestante3 {
-    background-image: url(imagens/verTodos/noticiaRestante3.webp);
+    background-image: url(imagens/verTodos/noticiaRestante6.webp);
     height: 200px;
     width: 200px;
 }
@@ -176,7 +258,7 @@ article {
     width: 200px;
 }
 #imagemNoticiaRestante6 {
-    background-image: url(imagens/verTodos/noticiaRestante6.webp);
+    background-image: url(imagens/verTodos/noticiaRestante11.webp);
     height: 200px;
     width: 200px;
 }
@@ -214,4 +296,31 @@ article {
 #linkProximaPaginas a:hover {
     color: black;
     background: linear-gradient(146.31deg, rgb(255, 99, 177), rgb(255, 194, 146));
+}
+.nav h1 {
+    transform: translate(-527.72%, 177%);
+    font-size: 40px;
+    color: black;
+    font-family: "Lilita One", sans-serif;
+    text-shadow: white 1.5px 0px 4px;
+}
+#logo {
+    background-image: url(imagens/logo.png);
+    transform: translate(-381.5%, 15%);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+}
+.background-container {
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(156.30deg, rgb(229, 71, 26) 21.795%, rgb(250, 148, 4) 101.627%), rgb(238, 202, 55);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-right-radius: 150px;
+    border-bottom-left-radius: 150px;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
 }
